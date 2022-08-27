@@ -1,0 +1,110 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background: rgb(14, 14, 14);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.clockWrapper{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 22rem;
+    height: 22rem;
+    margin: 22px;
+    background: rgb(154, 87, 37);
+    border-radius: 15px;
+}
+#hour{
+    width: 1.2rem;
+    height: 7rem;
+    background: rgb(229, 235, 236);
+    box-shadow: 2px 2px 8px rgb(0, 0, 0);
+    position: absolute;
+    top: 4.8em;
+    left: 50%;
+    transform: rotate(0deg) translateX(-50%);
+    transform-origin: bottom center;
+}
+#minute{
+    width: 1px;
+    height: 7rem;
+    padding: 0 4px 0 4px;
+    background: rgb(13, 114, 215);
+    box-shadow: 3px 3px 10px black;
+    position: absolute;
+    top: 4rem;
+    left: 50%;
+    transform: rotate(0deg) translateX(-50%);
+    transform-origin: bottom center;
+}
+#second{
+    width: 1px;
+    height: 140px;
+    padding: 0 1px 0 1px;
+    background: rgb(223, 209, 7);
+    box-shadow: 3px 3px 10px black;
+    position: absolute;
+    top: 1.25rem;
+    left: 50%;
+    transform: rotate(360deg) translateX(-50%);
+    transform-origin: bottom center;
+    z-index: 1;
+}
+.center{
+    width: 3rem;  
+    height: 3rem;
+    background: rgb(177, 21, 21);
+    border-radius: 50%;
+    box-shadow: 2px 2px 10px black;
+    z-index: 10;
+    
+}
+
+.twelve{
+    position: absolute;
+    top: 1.25rem;
+    left: 50%;
+    font-size: 4em;
+    font-weight: bold;
+    color: rgb(0, 255, 128);
+    transform: translateX(-50%);
+}
+
+.three{
+    position: absolute;
+    top: 50%;
+    color: rgb(214, 203, 194);
+    right: 1.25rem;
+    font-size: 3.5em;
+    font-weight: bold;
+    transform: translateY(-50%);
+}
+.six{
+    position: absolute;
+    bottom: 1.25rem;
+    color: aliceblue;
+    left: 50%;
+    font-size: 3.5em;
+    font-weight: bold;
+    transform: translateX(-50%); 
+}
+.nine{
+    position: absolute;
+    top: 50%;
+    color: aliceblue;
+    left: 1.25rem;
+    font-size: 3.5em;
+    font-weight: bold;
+    transform: translateY(-50%); 
+}
